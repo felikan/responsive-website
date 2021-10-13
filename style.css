@@ -1,0 +1,172 @@
+* {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    color: #724739;
+}
+body {
+    margin: 0;
+}
+#menu {
+    overflow: hidden;
+    background-color: rgb(183, 139, 108);
+}
+#head {
+    overflow: hidden;
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(183, 139, 108, 0);
+    align-items: center;
+}
+#menu a {
+    float: left;
+    display: inline;
+    color: antiquewhite;
+    background-color: rgba(183, 139, 108, 0);
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 3rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+#head i {
+    display: none;
+    top: 6px;
+    right: 10px;
+    background-color: rgb(183, 139, 108);
+}
+#banner {
+    height: 35rem;
+    background-image: url("https://image.freepik.com/free-photo/top-view-roasted-coffee-beans-scattered-brown-paper-texture-background-with-copy-space_141793-7136.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(250,235,215,0.6);
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+    text-shadow: 2px 3px 3px black
+}
+#blog .post{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#three {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 2rem;
+}
+.p2{
+    margin-left: 15rem;
+}
+.post .image{
+    width: 100%;
+    height: auto;
+}
+.image-container img {
+    max-width: 100%;
+}
+.image-container .image {
+    display: block;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+#info {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+#history {
+    margin-top: 6rem;
+}
+.next {
+    margin-top: 2rem;
+}
+#visit img{
+    max-width: 98%;
+    height: auto;
+    border: 2px solid #724739;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#end {
+    text-align: center;
+}
+#map {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:98%;
+    max-width: 30rem;
+    height:20rem;
+    border: 2px solid #724739;
+    border-radius: 4px;
+}
+footer {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+/* Menu respond ohne Script
+@media only screen and (max-width: 600px) {
+    #menu a {
+        float: none;
+        display: block;
+    }
+}
+*/
+@media only screen and (max-width: 700px) {
+    #head {
+        background-color: rgba(183, 139, 108, 1);
+        z-index: 0;
+    }
+    #head i {
+        display: flex;
+        cursor: pointer;
+    }
+    #menu a {
+        display: none;
+    }
+    #menu {
+        background-color: rgba(114, 71, 57, 0.5);
+    }
+    #a1 {
+        margin-top: 48px;
+    }
+    #menu.open-menu a{
+        display: block;
+        float: none;
+        text-align: right;
+
+    }
+}
+@media only screen and (max-width: 800px) {
+    .p2 {
+        margin-left: 5rem;
+    }
+    #info {
+        items-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .next {
+        float: left;
+        width: 50%;
+        margin-right: 0;
+    }
+}
